@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/x-icon" href="\images\cool-background (1).png">
+      <title>PIXVIZ</title>
+   </head>
+   <style>
+      body {
+      font-family: Arial, sans-serif;
+      background-image: url(/web/images/cool-background\ \(1\).png);
+      overflow: hidden;
+      background-size: cover;
+      color: #efefef;
+      background-color: black;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      }
+      #app-name {
+      font-size: 8rem;
+      margin-top: 20vh;
+      opacity: 1;
+      display: inline;
+      vertical-align: middle;
+      margin-right: 10px;
+      }
+      img{
+      border-radius: 50%;
+      display: inline;
+      vertical-align: middle;
+      margin-right: 10px;
+      height: 100px;
+      }
+      a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #efefef;
+      color: #2b5293;
+      text-decoration: none;
+      font-size: 1.5rem;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+      }
+      #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      }
+   </style>
+   <body>
+      <br><br><br>
+      <img src="Screenshot 2023-10-25 181311.png" alt="">
+      <h1 id="app-name">PIXVIZ</h1>
+      <br>
+      <a href="firstpage.html">Start Searching</a>
+      <div id="particles-js"></div>
+      <script>
+         const appName = document.getElementById("app-name");
+
+         function animateText() {
+             let opacity = 0;
+             const animationInterval = setInterval(function () {
+                 opacity += 0.05; 
+                 appName.style.opacity = opacity;
+                 if (opacity >= 1) {
+                     clearInterval(animationInterval);
+                 }
+             }, 50);
+         }
+      </script>
+      <script src="particles.js"></script>
+      <script src="app.js"></script>
+   </body>
+</html>
