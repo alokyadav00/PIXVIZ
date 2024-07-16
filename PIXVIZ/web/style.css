@@ -1,0 +1,90 @@
+/* Add this CSS to your existing style.css file */
+
+body{
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("/web/images/cool-background (1).png");
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-color: black;
+}
+
+.buttons {
+  margin-left: 100px;
+  display: inline-flex;
+  flex-direction: column;
+  width: 20%;
+  vertical-align: top;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.buttons button {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid rgb(255, 255, 255);
+  
+}
+
+.buttons button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+}
+
+.container {
+  display: inline-block;
+  width: 55%; /* Adjust the width as needed */
+  vertical-align: top; /* Align the top of the element */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding: 10px; /* Add padding for spacing */
+  margin-left: 100px;
+  margin-right: 1px;
+  justify-content: center;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.output {
+  padding: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  max-width: 80%; /* Adjust as needed */
+  margin: 0 auto; /* Center the element horizontally */
+  text-align: center; /* Center content inside the element */
+  clear: both; /* Ensure no other elements float around this */
+  
+  height: 150px; /* Set a fixed height for the output area */
+  overflow-y: auto; /* Enable scrolling when content exceeds the size */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  white-space: pre-line;
+  padding-bottom: 10px; /* Preserve line breaks */
+}
+
+
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   /* Background color behind the particles */
+  z-index: -1; /* Place it behind other content */
+}
+
+#search-again{
+  margin-left: 100px;
+  display: inline-flex;
+}
