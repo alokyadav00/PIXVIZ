@@ -1,0 +1,59 @@
+/* Dashboard Container */
+.dashboard {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    margin-right: 40px;  
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  /* Dashboard Title */
+  .dashboard-title {
+    margin-bottom: 30px;
+    font-size: 36px;
+    text-align: center;
+    color: #758694;
+    font-weight: bold;
+  }
+  
+  /* Dashboard Data Container */
+  .dashboard-data {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Dashboard Data Items */
+  .budget, .expended, .remaining {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to left, #2d3142, #e9ecef);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Dashboard Numbers */
+  .budget-num, .expended-num, .remaining-num {
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f7f9fc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  

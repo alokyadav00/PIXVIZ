@@ -1,0 +1,77 @@
+/* Intro Section */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 210px;
+    right: 0;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Left Part of Intro */
+.intro-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome {
+    font-family: 'Edu AU VIC WA NT Hand', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.myname {
+    font-family: 'Edu AU VIC WA NT Hand', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #666;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Right Part of Intro */
+.logout {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #d8d5db;
+}
+
+.logout-button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

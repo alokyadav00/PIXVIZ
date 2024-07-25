@@ -1,0 +1,94 @@
+.display-entry-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Container */
+.entry-container {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    margin-bottom: 0;
+    height: 200px;
+}
+
+/* Input Fields */
+.entry-expense-type input,
+.entry-expense-name input,
+.entry-expense-value input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.entry-expense-type input:focus,
+.entry-expense-name input:focus,
+.entry-expense-value input:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: none;
+}
+
+/* Button */
+.entry-expense-submit .submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #d8d5db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.entry-expense-submit .submit:hover {
+    background-color: white;
+}
+
+.entry-expense-submit .submit:active {
+    transform: scale(0.98);
+}
+
+/* Centering */
+.entry-expense-name, 
+.entry-expense-type, 
+.entry-expense-value, 
+.entry-expense-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.entry-expense-type select {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ced4da; 
+    border-radius: 5px; 
+    font-size: 16px;
+    color: #495057; 
+    background-color: #fff;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.entry-expense-type select:focus {
+    border-color: #80bdff; /* Border color on focus */
+    outline: 0; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Add shadow on focus */
+}
+
+.dd{
+    display: flex;
+    justify-content: center;
+    background-color: #EEEDEB;
+    
+}

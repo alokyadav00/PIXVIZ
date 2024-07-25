@@ -1,0 +1,69 @@
+/* Expense Display Container */
+.expense-display {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    background-color: #adacb5;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.expense-display:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Expense Details */
+.expense-type, .expense-name, .expense-value {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* Highlighted Expense */
+.highlight {
+    background-color: #2d3142;
+    color: #2F3645; /* Subtle yellow for highlighting */
+}
+
+
+.delete-button {
+    background-color: white; 
+    border: none; 
+    color: d8d5db;
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 14px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.delete-button:hover {
+    background-color: #d8d5db; 
+    transform: scale(1.05);
+}
+
+/* Expense Display Container Parent */
+.js-expense-display {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#expense-title{
+    background-color: #2d3142;
+    display: flex;
+    justify-content: left;
+}

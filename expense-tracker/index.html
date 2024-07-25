@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expense Tracker</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/sidebar.css">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/welcome.css">
+        <link rel="stylesheet" href="styles/dashboard.css">
+        <link rel="stylesheet" href="styles/expense-display.css">
+        <link rel="stylesheet" href="styles/display-entry-container.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-items">
+      <img src="icons/oo.jpg" alt="Profile" class="profile-pic">
+    </div>
+    <div class="sidebar-items">
+      <button>
+        <a href="#addExpense">Add Expense</a>
+      </button>
+    </div>
+    <div class="sidebar-items">
+      <button class="setBudgetBtn">Set Budget</button>
+      <div class="dropdown" id="dropdown">
+        <input type="number" class="budgetInput" placeholder="Enter Budget">
+        <button class="submitBudget">Set</button>
+      </div>
+    </div>
+    <div class="sidebar-items">
+      <button>
+        <a href="#profile">Profile</a>
+      </button>
+    </div>
+    <div class="sidebar-items">
+      <button>
+        <a href="#settings">Settings</a>
+      </button>
+    </div>
+    <div class="sidebar-items">
+      <button>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alokyadavv12321@gmail.com&su=Report%20Issue" target="_blank">Report Issue</a>
+  </button>
+    </button>
+    </div>
+    <div class="sidebar-items">
+      <button id="contactUsBtn">Contact Us</button>
+      <div class="contact-details" id="contactDetails" style="display: none;">
+        <p>Phone: +917296810142</p>
+        <p>Email: <a href="mailto:alokyadavv12321@gmail.com">alokyadavv12321@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/alok-yadav001" target="_blank">alok-yadav001</a></p>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="intro">
+    <div class="intro-left">
+        <div class="welcome">
+            Welcome
+        </div>
+        <div class="myname">
+            Alok Yadav
+        </div>
+        <div class="tagline">
+            Your Personal Expense Tracker
+        </div>
+    </div>
+    <div class="logout">
+        <button class="logout-button">
+            <img src="icons/logoutt.svg" alt="Logout">
+        </button>
+    </div>
+</div>
+
+  <div class="dashboard">
+      <div class="dashboard-title">Dashboard</div>
+      <div class="dashboard-data">
+        <div class="budget">
+          Budget
+          <div class="budget-num">1000</div>
+        </div>
+        <div class="expended">
+          Expenses
+          <div class="expended-num">0</div>
+        </div>
+        <div class="remaining">
+          Remaining
+          <div class="remaining-num" id="addExpense">1000</div>
+        </div>
+      </div>
+    </div>
+    
+  <div class="searchbar">
+      <input type="text" class="search-bar" placeholder="Search by name or type">
+    </div>
+
+  <div class="sortby">
+      <select class="sort-type">
+        <option value="Latest">Latest</option>
+        <option value="Earliest">Earliest</option>
+        <option value="Amount">Amount</option>
+        <option value="Type">Type</option>
+    </select>
+    </div>
+
+  <div class="display-entry-container">
+      <div class="display-container">
+        <div class="expense-display" id="expense-title">
+          <div class="expense-type">Expense Type</div>
+          <div class="expense-name">Name</div>
+          <div class="expense-value">Amount</div>
+          <div class="expense-value" id="datesec">Date</div>
+        </div>
+    
+        <div class="js-expense-displayy">
+        </div>
+      </div>
+      <div class="entry-container">
+        <div class="entry-expense-type">
+          <select class="entry-type">
+              <option value="Food">Food</option>
+              <option value="Travel">Travel</option>
+              <option value="Utilities">Utilities</option>
+              <option value="Entertainment">Entertainment</option>
+              <option value="Other">Other</option>
+          </select>
+      </div>
+      
+        <div class="entry-expense-name">
+          <input type="text" class="entry-name">
+        </div>
+        <div class="entry-expense-value">
+          <input type="text" class="entry-value">
+        </div>
+        <div class="entry-expense-submit">
+          <button class="submit">Add Expense</button>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/expense.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Expense Tracker</h1>
+        <div class="login">
+            <div class="form-title">User Login</div>
+            <div class="login-username">
+                <label for="Username">Username</label>
+                <input type="text" name="Username" id="username-ip" required>
+            </div>
+            <div class="login-password">
+                <label for="Password">Password</label>
+                <input type="password" name="Password" id="password-ip" required>
+            </div>
+            <button type="submit" class="login-submit">Login</button>
+            <p>Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+        </div>
+        
+        <div class="signup" id="signup-form">
+            <div class="form-title">Create Account</div>
+            <div class="signup-username">
+                <label for="signup-Username">Username</label>
+                <input type="text" name="signup-Username" id="signup-username-ip" required>
+            </div>
+            <div class="signup-password">
+                <label for="signup-Password">Password</label>
+                <input type="password" name="signup-Password" id="signup-password-ip" required>
+            </div>
+            <button type="submit" class="signup-submit">Sign Up</button>
+            <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+        </div>
+    </div>
+    <script src="scripts/login.js"></script>
+</body>
+</html>
