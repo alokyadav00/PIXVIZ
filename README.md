@@ -1,2 +1,1 @@
-# PIXVIZ
-image processing app
+#Personal Projects
